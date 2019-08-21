@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ActiveKey</title>
+</head>
+<body>
+<script>
+    // ma quoc gia nuoc mi : 03201 - 2150
+    // /^[0-9]{5}(?:-[0-9]{4})?$/;
+    //lam kiem tra
+    function checkUsa(str) {
+        let codeActive = "03201-44560";
+        let checking = /[0-3]{5}?-[0-8]{5}/g;
+        let result = checking.test(str);
+        if (result) {
+            document.write("Kích hoạt codeGame thành công! Cám ơn đã mua game!");
+        } else {
+            document.write("Sai ActiveKey! Hãy mua key bản quyền để thể hiện sự tôn trọng với nhà sản xuất!");
+        }
+    };
+    let login = prompt("");
+    checkUsa(login);
+</script>
+</body>
+</html>
